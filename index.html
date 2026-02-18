@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fibers and Their Sources</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #89f7fe, #66a6ff);
+            text-align: center;
+            color: #333;
+        }
+
+        h1 {
+            padding: 20px;
+            color: darkblue;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 15px;
+            border-radius: 15px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            transition: transform 0.4s;
+            animation: slideUp 1.5s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        img {
+            width: 100%;
+            height: 180px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        @keyframes fadeIn {
+            from {opacity: 0;}
+            to {opacity: 1;}
+        }
+
+        @keyframes slideUp {
+            from {transform: translateY(50px); opacity: 0;}
+            to {transform: translateY(0); opacity: 1;}
+        }
+
+        footer {
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<h1>🧵 Fibers and Their Sources 🌿</h1>
+
+<!-- Background Voice -->
+<audio autoplay controls loop>
+    <source src="voice.mp3" type="audio/mpeg">
+</audio>
+
+<div class="container">
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/CottonPlant.JPG">
+        <h2>Cotton</h2>
+        <p>Cotton comes from cotton plants. It is soft and used to make clothes.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Silkworm.jpg">
+        <h2>Silk</h2>
+        <p>Silk comes from silkworms. It is smooth and shiny.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/4/4f/Jute_fiber.jpg">
+        <h2>Jute</h2>
+        <p>Jute comes from jute plants. It is used to make ropes and bags.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Sheep.jpg">
+        <h2>Wool</h2>
+        <p>Wool comes from sheep. It keeps us warm.</p>
+    </div>
+
+    <div class="card">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Nylon_fibers.jpg">
+        <h2>Nylon</h2>
+        <p>Nylon is a man-made fiber made in factories.</p>
+    </div>
+
+</div>
+
+<footer>
+    Made by My Son ❤️
+</footer>
+
+</body>
+</html>
